@@ -2,6 +2,18 @@
 This is a short - spanning only one Activity - but useful script for programmers in Android development to extract information relating to an IP address from IP2Location. This script obtains the following information from IP2Location where available:
 * IP Address
 * Country code
+* Country name
+* Region name
+* City name
+* Latitude
+* Longitude
+* Zip code
+* Time zone
+* ASN
+* AS
+* Whether or not IP address is a proxy
+
+Note that this script can only be used for the XML option for IP2Location. It does not work for the JSON version; please consult a different script if this is your preference.
 
 
 # Instructions
