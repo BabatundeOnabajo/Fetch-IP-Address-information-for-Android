@@ -1,9 +1,11 @@
 # About Fetch IP Address for Android
-The
+This is a short - spanning only one Activity - but useful script for programmers in Android development to extract information relating to an IP address from IP2Location. 
+
 
 # Instructions
+You can copy and paste this code. You only need to edit the variable identified as APIKEY (which indicates you should 
 
-#
+# Requirements
 
 # Credits
 
