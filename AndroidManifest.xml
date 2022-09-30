@@ -12,6 +12,7 @@
         <activity android:name=".MainActivity"></activity>
     </application>
 
+    <!-- We need to request permission for the end user to access the Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
