@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     HttpURLConnection httpConnection = (HttpURLConnection) connection;
                     int responseCode = httpConnection.getResponseCode();
 
-                    if (responseCode == HttpURLConnection.HTTP_OK) { //We begin to open up the internet connection. 
+                    if (responseCode == HttpURLConnection.HTTP_OK) { //We begin to open up the internet connection.
 
                         InputStream in = httpConnection.getInputStream();
 
@@ -121,11 +121,11 @@ public class MainActivity extends AppCompatActivity {
                                     // Toast.makeText(MainActivity.this, responseForCityName, Toast.LENGTH_LONG).show();
                                     // Toast.makeText(MainActivity.this, responseForLatitude, Toast.LENGTH_LONG).show();
                                     // Toast.makeText(MainActivity.this, responseForLongitude, Toast.LENGTH_LONG).show();
-                                    
-                                    
-                                    
-
-
+                                    // Toast.makeText(MainActivity.this, responseForZipCode, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForTimeZone, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForASN, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForAS, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForIsProxy, Toast.LENGTH_LONG).show();
 
                                 }else{ // If there is no response or some other issue, we alert the programmer with the well-known "Toast" feature.
                                     Toast.makeText(MainActivity.this, "There appears to be an issue. Please check whether the IP address provided is correct or otherwise consult the programmer", Toast.LENGTH_LONG).show();
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        threadForFetchingIPAddressFromIP2Location.start();//
+        threadForFetchingIPAddressFromIP2Location.start();//This begins the thread.
         
     }
 
