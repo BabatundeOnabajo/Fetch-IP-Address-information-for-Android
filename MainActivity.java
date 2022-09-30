@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 // These are arranged exactly as they appear in the XML document that IP2Location returns to us. This is important to note because when we iterate over the XML document, the
 
+    public String responseForIPAddress;
     public String responseForCountryCode;
     public String responseForCountryName;
     public String responseForRegionName;
@@ -100,21 +101,37 @@ public class MainActivity extends AppCompatActivity {
                             for (int i = 0; i < 11; i++) { //The response for IP2Location's IP address quest typically provides 12 responses, so we iterate from 0 to 11 (remembering that such iterations are zero-indexed meaning that we count from 0 not from 1. We can be reasonably sure
 
                                 if (resultsOfIPAddressSearchQuery.item(i).getTextContent().length() > 0) { //Here we check that the response is not empty.
-
-                                    responseForCountryCode = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForCountryName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForRegionName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForCityName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForLatitude = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForLongitude = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForZipCode = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForTimeZone = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForASN = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForAS = resultsOfIPAddressSearchQuery.item(i).getTextContent();
-                                    responseForIsProxy = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    if(i == 0 ){
+                                        responseForIPAddress = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }
+                                    if(i == 1){
+                                        responseForCountryCode = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 2){
+                                        responseForCountryName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 3){
+                                        responseForRegionName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }
+                                    else if(i == 4){
+                                        responseForCityName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 5){
+                                        responseForLatitude = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 6){
+                                        responseForLongitude = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 7){
+                                        responseForZipCode = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 8){
+                                        responseForTimeZone = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 9){
+                                        responseForASN = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 10){
+                                        responseForAS = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }else if(i == 11){
+                                        responseForIsProxy = resultsOfIPAddressSearchQuery.item(i).getTextContent();
+                                    }
 
                                     // If you want to test to see whether this works, you can uncomment this part out.
 
+                                    // Toast.makeText(MainActivity.this, responseForIPAddress, Toast.LENGTH_LONG).show();
                                     // Toast.makeText(MainActivity.this, responseForCountryCode, Toast.LENGTH_LONG).show();
                                     // Toast.makeText(MainActivity.this, responseForCountryName, Toast.LENGTH_LONG).show();
                                     // Toast.makeText(MainActivity.this, responseForRegionName, Toast.LENGTH_LONG).show();
