@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     HttpURLConnection httpConnection = (HttpURLConnection) connection;
                     int responseCode = httpConnection.getResponseCode();
 
-                    if (responseCode == HttpURLConnection.HTTP_OK) { //We begin
+                    if (responseCode == HttpURLConnection.HTTP_OK) { //We begin to open up the internet connection. 
 
                         InputStream in = httpConnection.getInputStream();
 
@@ -117,7 +117,13 @@ public class MainActivity extends AppCompatActivity {
 
                                     // Toast.makeText(MainActivity.this, responseForCountryCode, Toast.LENGTH_LONG).show();
                                     // Toast.makeText(MainActivity.this, responseForCountryName, Toast.LENGTH_LONG).show();
-                                    // Toast.makeText(MainActivity.this, responseForCountryName, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForRegionName, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForCityName, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForLatitude, Toast.LENGTH_LONG).show();
+                                    // Toast.makeText(MainActivity.this, responseForLongitude, Toast.LENGTH_LONG).show();
+                                    
+                                    
+                                    
 
 
 
