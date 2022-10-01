@@ -19,9 +19,9 @@ Note that this script can only be used for the XML option for IP2Location. It do
 # Instructions
 You can copy and paste this code. You only need to edit the variable identified as APIKEY (which indicates the API key you should have obtained from IP2Location. Contact them if you would like information on how to receive this) as well as ipADDRESS (which refers to the IP Address you would like to obtain information for). 
 
-In order to see this code in action using Android Studio, copy the create a new project in Android Studio and name the project "Fetch IP Addresses for Android". Android Studio should then automatically create a package name called "com.example.fetchipaddressesonlineforandroid". Also select the option <b> Empty Activity </b>. Then copy all the information from MainActiviy.java here and paste it into the file, overwriting anything that might be present. 
+In order to see this code in action using Android Studio, copy the create a new project in Android Studio and name the project "Fetch IP Addresses for Android". Android Studio should then automatically create a package name called "com.example.fetchipaddressesonlineforandroid". Also select the option <b> Empty Activity </b>. Then copy all the information from <b> MainActiviy.java </b> here and paste it into the file, overwriting anything that might be present. 
 
-To test the script, a series of Toast functions are in the script. They are commented out, but you can uncomment them to see them in action. To see them in action, click "<b>Run 'app'</b>" and then the emulator should open up. Click on the app that has been installed and you should see the requested information appear as a series of Toast bubble messages. 
+To test the script, a series of Toast functions are in the script. They are commented out, but you can uncomment them in <b>MainActivity.java</b> to see them in action. To see them in action, click "<b>Run 'app'</b>" and then the emulator should open up. Click on the app that has been installed and you should see the requested information appear as a series of Toast bubble messages. 
 
 # Requirements
 * Android Studio, Eclipse or a similar Integrated Development Environment (IDE) that can compile and run Android software.
