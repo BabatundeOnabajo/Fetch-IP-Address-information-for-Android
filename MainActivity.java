@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 // Here we declare a range of variables that are associated with the XML response, with the exception of the IP Address which you can alter yourself later down below inside the Thread identified as threadForFetchingIPAddressFromIP2Location.
 
-// These are arranged exactly as they appear in the XML document that IP2Location returns to us. This is important to note because when we iterate over the XML document, the
+// These are arranged exactly as they appear in the XML document that IP2Location returns to us. This is important to note because when we iterate over the XML document, the iteration assumes a certain format.
 
     public String responseForIPAddress;
     public String responseForCountryCode;
