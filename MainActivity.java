@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                                     if(i == 0 ){
                                         responseForIPAddress = resultsOfIPAddressSearchQuery.item(i).getTextContent();
                                     }
-                                    if(i == 1){
+                                    else if(i == 1){
                                         responseForCountryCode = resultsOfIPAddressSearchQuery.item(i).getTextContent();
                                     }else if(i == 2){
                                         responseForCountryName = resultsOfIPAddressSearchQuery.item(i).getTextContent();
