@@ -21,12 +21,15 @@ You can copy and paste this code. You only need to edit the variable identified 
 
 In order to see this code in action using Android Studio, copy the create a new project in Android Studio and name the project "Fetch IP Addresses for Android". Android Studio should then automatically create a package name called "com.example.fetchipaddressesonlineforandroid". Also select the option <b> Empty Activity </b>. Then copy all the information from MainActiviy.java here and paste it into the file, overwriting anything that might be present. 
 
+To test the script, a series of Toast functions are in the script. They are commented out, but you can uncomment them to see them in action. To see them in action, click "<b>Run 'app'</b> and then the emulator should open up. Click on the app that has been installed and you should see the requested information appear as a series of Toast bubble messages. 
+
 # Requirements
 * Android Studio, Eclipse or a similar Integrated Development Environment (IDE) that can compile and run Android software.
 * Windows, Mac or Linux
 * Internet access
 * 
-It is not necessary to have a physical Android device but you can test it on your device as well if that suits your fancy. Given the elemental nature of this script, this script should work on practically all versions of Android, despite the fact that targetSdkVersion is labelled as 33 and compileSdkVersion is 33. However, you might need to change the line <b> import androidx.appcompat.app.AppCompatActivity; </b> . Please consult official Android documentation surrounding this, otherwise just continue with the latest version of Android as of writing (33). Then copy and paste the code in this repository labelled "MainActivity.java". Once that is done, you must edit the constant APIKEY to include your API key and edit the constant ipADDRESS for the IP Address you want to look up. Voila! You are now able to fetch information for IP addresses on Android. This script handles all the difficult stuff in the context of Android, such as connecting to the internet as well as managing threads. You can build upon this script, for instance, saving 
+It is not necessary to have a physical Android device but you can test it on your device as well if that suits your fancy. Given the elemental nature of this script, this script should work on practically all versions of Android, despite the fact that targetSdkVersion is labelled as 33 and compileSdkVersion is 33. However, you might need to change the line <b> import androidx.appcompat.app.AppCompatActivity; </b> . Please consult official Android documentation surrounding this, otherwise just continue with the latest version of Android as of writing (33). Then copy and paste the code in this repository labelled "MainActivity.java". Once that is done, you must edit the constant APIKEY to include your API key and edit the constant ipADDRESS for the IP Address you want to look up. Voila! You are now able to fetch information for IP addresses on Android. This script handles all the difficult stuff in the context of Android, such as connecting to the internet as well as managing threads. You can build upon this script, for instance, saving the variable responseForCountryName into a local database. 
+
 
 # Credits
 * Babatunde Onabajo (ChurchMapped Limited)
