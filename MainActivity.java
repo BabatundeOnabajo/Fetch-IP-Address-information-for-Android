@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 URL url;
                 try {
-                    String websiteToObtainIPAddress = "https://api.ip2location.io/?key=" + APIKEY + ipADDRESS + "&format=xml";
+                    String websiteToObtainIPAddress = "https://api.ip2location.io/?key=" + APIKEY + "&ip=" + ipADDRESS + "&format=xml";
 
                     url = new URL(websiteToObtainIPAddress);
 
