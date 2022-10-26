@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FetchIPAddressesOnlineForAndroid">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"
+                  android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER"</intent-filter>
+            </activity>
     </application>
 
     <!-- We need to request permission for the end user to access the Internet. To the best of the author's knowledge, it is not necessary to also have this permission at runtime. -->
